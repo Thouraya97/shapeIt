@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/health"
+        tools:ignore="ContentDescription"
+        android:layout_gravity="center"
+        android:id="@+id/bilan"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/age"
+            android:id="@+id/ageIcon"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/spinnerAge"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/poidIcon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            tools:ignore="ContentDescription"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/poids" />
+
+        <EditText
+            android:id="@+id/etpoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Write your weight here please" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            tools:ignore="ContentDescription"
+            android:src="@mipmap/mesure"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ettaille"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="20dp"
+            android:hint="Write your height here"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_check_black_24dp"
+        />
+
+</LinearLayout>

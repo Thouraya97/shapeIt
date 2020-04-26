@@ -1,0 +1,2 @@
+rootProject.name='emchiAman'
+include ':app'
